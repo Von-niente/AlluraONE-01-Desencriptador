@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color:rgb(241, 249, 253);
+}
+@font-face{
+    font-family:Avenir ;
+    src:url(../MULTIMEDIA/AvenirLTStd-Roman.otf);
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color:lightskyblue;
+    padding: 2% 2%;
+    height: 3%;
+}
+
+.titulo {
+    display: flex;
+    font-family: Avenir;
+    font-size: 2.8em;
+    align-items: center;
+    margin: 0.2% 0% 0.2% 0%;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: auto;
+    width: 21px;
+    height: 32px;
+    left: 3%;
+    margin: 0% 0% 0% 0%;
+}
+label{
+    font-size: 2em;
+    font-family: Avenir;
+    padding: 2%;
+    display:flex;
+    justify-content: center;
+}
+#msg, #input-texto {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ____________ diseño _____________*/
+
+.container{
+    background-color:rgb(241, 249, 253);
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    height: 100px; 
+}
+
+
+.encrip, .text-input, .msgbox, 
+.text-input-salida,.adv,.botones{
+    width: 100%;
+    min-width: 150px;
+}
+.botones {
+    height: auto;
+}
+.msgbox {
+    background-color:lightskyblue;
+    font-family: Avenir;
+    height: auto;
+    padding: 2%;
+}
+.encrip {
+    background-color:rgb(241, 249, 253);
+    padding: 2%; 
+    font-family: Avenir;
+    height: auto;
+}
+.adv {
+    background-color:rgb(241, 249, 253);
+    height: 8%;
+    padding: 2%;
+    font-size: medium;
+    font-family: Avenir;
+    display:flex;
+    justify-content: center;
+}
+.botones {
+    background-color:rgb(241, 249, 253);
+    font-family: Avenir;
+    font-size: 20px;
+    padding: 1%;
+}
+
+#btn-encriptar, #btn-desencriptar, #btn-copy{
+    text-decoration:none;
+font-weight: 400;
+font-size: 18px;
+color:#ffffff;
+padding: 1%;
+background-color:darkslateblue;
+border-color: #d8d8d8;
+border-width: 3px;
+border-radius:35px;
+}
+
+@media(min-width:400px){
+    
+    .container{
+        width: 95%;
+        height: 900px;
+        margin: auto;
+    }
+    .encrip {
+        width: 100%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .adv{
+        width: 100%;
+        height: 8%; 
+        order: 2;
+        display:flex;
+       justify-content: center;
+    }
+    .msgbox {
+        width: 100%;
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        }
+   
+    .botones{
+       width: 100%; 
+       height: 14%;
+       order: 4;
+       display:flex;
+       justify-content: center;
+    }
+}
+@media(min-width:1000px){
+    .container{
+        width: 95%;
+        height: 500px;
+        margin: auto;
+    } 
+}

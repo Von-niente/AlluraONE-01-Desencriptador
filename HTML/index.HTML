@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+  </head>
+<header>        
+    <img class="logo" src="../MULTIMEDIA/Vector.png" alt="imagen de logo" />    
+    <div class="vn1"> <h1 class="titulo">Encriptador</h1></div>
+</header>
+
+  <body>
+  <main class= "container">
+    <div class="encrip">  
+      <label for="input-texto">Ingrese el texto a encriptar o desencriptar</label>   
+          <textarea class="text-input" type="text" name="input-texto" id="input-texto" col= 10 rows= 10
+          placeholder="Ingrese el texto aqui"> </textarea>
+          <div class="adv"><h3>letras minúsculas, sin acento</h3> </div>
+    </div>
+    
+    <div class="msgbox">
+        <label id="">Respuesta:</label>
+        <textarea class= "text-input-salida" type="text" id="msg" col= 10 rows= 10 > </textarea>
+    </div>
+    
+    <div class="botones">
+        <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
+        <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
+        <input class="btn3" type="button" value="copiar" id="btn-copy">
+      </div>
+  </main> 
+    <script src="../JS/script.js"></script>
+    <script> var btn3 = document.querySelector("#btn-copy");
+    btn3.onclick = copiar </script> 
+  </body>
+  </html>
